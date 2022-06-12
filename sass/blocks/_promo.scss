@@ -3,9 +3,15 @@
 	position: relative;
 	background: url('../img/main_bg.jpg') no-repeat 50%/cover;
 	padding-top: 205px;
-	&_title {
+	&__title {
 		width: 530px;
 		margin-top: 10px;
+	}
+	&__subtitle {
+		position: relative;
+		padding-left: 10px;
+		@include before_circle;
+		z-index: 2;
 	}
 	&__btns {
 		margin-top: 25px;
