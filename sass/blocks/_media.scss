@@ -1,0 +1,267 @@
+@media (max-width: 1326px) {
+	.sidepanel {
+		display: none;
+	}
+}
+@media (max-width: 1200px) {
+	.container{
+		width: 960px;
+	}
+	.about {
+		&__wrapper {
+			grid-template-columns: 400px 520px;
+        column-gap: 40px;
+		}
+		&__skills {
+			column-gap: 20px;
+			&-item {
+				grid-template-columns: 40px 195px;
+				column-gap: 15px;
+			}
+		}
+	}
+	.resume {
+		&__wrapper {
+			padding: 60px 0 0 0;
+			grid-template-columns: repeat(2, 425px);
+        	column-gap: 110px;
+		}
+	}
+	.skills {
+		&__items {
+			grid-template-columns: repeat(auto-fit, 270px);
+			justify-content: center;
+		}
+		&__ratings {
+			grid-template-columns: repeat(auto-fit, 350px);
+			justify-content: center;
+		}
+	}
+	.portfolio {
+		&__wrapper {
+			grid-template-columns: repeat(auto-fit, 280px);
+			grid-auto-rows: 280px;
+			justify-content: center;
+			.horizontal, .vertical {
+				grid-row: unset;
+				grid-column: unset;
+			}
+		}
+	}
+	.contacts {
+		&__wrapper {
+			padding:0;
+			grid-template-columns: 400px 550px;
+		}
+		&__form {
+			grid-template-columns: repeat(2, 270px);
+		}
+	}
+}
+@media (max-width: 992px) {
+	.container{
+		width: 720px;
+	}
+	.about {
+		&__wrapper {
+			grid-template-columns: 300px 380px;
+		}
+		&__skills {
+			grid-template-columns: 380px;
+			&-item {
+				grid-template-columns: 40px 320px;
+				column-gap: 20px;
+			}
+		}
+	}
+	.resume {
+		&__wrapper {
+			grid-template-columns: repeat(2, 1fr);
+        	column-gap: 50px;
+		}
+	}
+	.skills {
+		&__ratings {
+			grid-template-columns: repeat(auto-fit, 300px);
+			&-item {
+				grid-template: minmax(21px, auto) 14px / 200px 35px;
+			}
+			&-line {
+				width: 100%;
+			}
+		}
+	}
+	.price {
+		&__wrapper {
+			padding: 0;
+			grid-template-columns: repeat(auto-fit, 350px);
+			justify-content: space-around;
+		}
+	}
+	.contacts {
+		&__wrapper {
+			padding:0;
+			grid-template-columns: 300px 410px;
+		}
+		&__form {
+			grid-template-columns: repeat(2, 200px);
+		}
+		&__btn {
+			padding: 0;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.container{
+		width: 540px;
+	}
+	.title {
+		&__fs48 {
+			font-size: 28px;
+		}
+	}
+	.promo__title {
+		width: 300px;
+		line-height: 39px;
+	}
+	.about {
+		padding-top: 40px;
+		&__wrapper {
+			grid-template: 340px auto auto / 1fr;
+		}
+		&__photo {
+			grid-row: unset;
+		}
+		&__skills {
+			grid-template-columns: repeat(2, 260px);
+			&-item {
+				grid-template-columns: 40px 200px;
+            	column-gap: 20px;
+			}
+		}
+	}
+	.divider {
+		margin-top: 0;
+	}
+	.resume {
+		padding-top: 40px;
+		&__wrapper {
+			padding-top: 40px;
+			display: grid;
+			grid-template-columns: 1fr;
+			row-gap: 40px;
+		}
+	}
+	.skills {
+		padding-top: 40px;
+		&__items {
+			margin-top: 20px;
+		}
+		&__ratings {
+			margin-top: 40px;
+			row-gap: 40px;
+			column-gap: 20px;
+		}
+	}
+	.portfolio {
+		padding-top: 40px;
+		&__wrapper {
+			margin-top: 20px;
+		}
+	}
+	.price {
+		padding-top: 40px;
+		.divider {
+			margin-top: 12px;
+		}
+		&__wrapper {
+			margin-top: 20px;
+		}
+	}
+	.contacts {
+		padding: 40px 0 50px 0;
+		&__wrapper {
+			display: block;
+		}
+		&__photo {
+			display: none;
+		}
+		&__form {
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 5px;
+		}
+		&__btn {
+			padding: 12px 25px;
+		}
+		
+	}
+}
+@media (max-width: 576px) {
+	.container{
+		width: 100%;
+		padding: 0 10px;
+	}
+	.title {
+		&__fs48 {
+			font-size: 26px;
+		}
+		&__fs36 {
+			font-size: 24px;
+		}
+	}
+	.hamburger {
+		right: 20px;
+	}
+	.menu {
+		&__block {
+			width: 250px;
+			padding-left: 20px;
+		}
+	}
+	.promo {
+		background: url('../img/main_bg.jpg') no-repeat 58%/cover;
+		&__btns {
+			margin-top: 30px;
+		}
+	}
+	.about {
+		&__wrapper {
+			grid-template: 340px auto auto / 1fr;
+		}
+		&__skills {
+			grid-template-columns: 1fr;
+		}
+	}
+	.skills {
+		&__title {
+			line-height: 36px;
+			margin-bottom: 12px;
+		}
+	}.price {
+		&__wrapper {
+			grid-template-columns: repeat(auto-fit, 300px);
+		}
+	}
+	.contacts {
+		&__form {
+			grid-template: 45px 45px 190px auto / 280px;
+			justify-content: center;
+			row-gap: 27px;
+		}
+		&__textarea {
+			grid-column: unset;
+		}
+		&__triggers {
+			grid-column: unset;
+			grid-template-columns: 219px;
+			grid-template-rows: auto;
+			justify-content: center;
+			row-gap: 27px;
+		}
+		&__policy {
+			padding-left: 20px;
+			grid-row: 1/2;
+			flex-direction: row;
+		}
+	}
+}
